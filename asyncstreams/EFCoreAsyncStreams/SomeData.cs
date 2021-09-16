@@ -1,18 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿namespace EFCoreAsyncStreams;
 
-namespace EFCoreAsyncStreams
+public class SomeDataContext : DbContext
 {
-    public class SomeDataContext : DbContext
-    {
-        public SomeDataContext(DbContextOptions<SomeDataContext> options)
-            : base(options)
-        {
+    public SomeDataContext(DbContextOptions<SomeDataContext> options)
+        : base(options) { }
 
-        }
-
-        public DbSet<SomeData> SomeData => Set<SomeData>();
-    }
-
-    public record SomeData(string Text, int SomeDataId = default);
-
+    public DbSet<SomeData> SomeData => Set<SomeData>();
 }
+
+public record SomeData(string Text, int SomeDataId = default);
