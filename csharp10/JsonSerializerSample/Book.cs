@@ -1,3 +1,5 @@
 ﻿namespace JsonSerializerSample;
 
-public record Book(string Title, string? Publisher);
+public record Book(
+    [property: JsonPropertyName("title")] string Title, 
+    [property: JsonPropertyName("publisher")] string? Publisher);

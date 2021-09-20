@@ -58,7 +58,7 @@ namespace JsonSerializerSample
                 hasJsonInclude: false,
                 numberHandling: default,
                 propertyName: "Title",
-                jsonPropertyName: null);
+                jsonPropertyName: "title");
             
             properties[1] = global::System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreatePropertyInfo<global::System.String>(
                 options,
@@ -74,7 +74,7 @@ namespace JsonSerializerSample
                 hasJsonInclude: false,
                 numberHandling: default,
                 propertyName: "Publisher",
-                jsonPropertyName: null);
+                jsonPropertyName: "publisher");
             
             return properties;
         }
@@ -88,8 +88,8 @@ namespace JsonSerializerSample
             }
         
             writer.WriteStartObject();
-            writer.WriteString(PropName_Title, value.Title);
-            writer.WriteString(PropName_Publisher, value.Publisher);
+            writer.WriteString(PropName_title, value.Title);
+            writer.WriteString(PropName_publisher, value.Publisher);
         
             writer.WriteEndObject();
         }

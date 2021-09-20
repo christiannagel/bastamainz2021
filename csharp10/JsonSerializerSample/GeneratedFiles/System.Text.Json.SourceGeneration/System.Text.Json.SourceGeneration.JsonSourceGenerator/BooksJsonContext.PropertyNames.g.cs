@@ -6,7 +6,7 @@ namespace JsonSerializerSample
     internal partial class BooksJsonContext
     {
         
-        private static readonly global::System.Text.Json.JsonEncodedText PropName_Title = global::System.Text.Json.JsonEncodedText.Encode("Title");
-        private static readonly global::System.Text.Json.JsonEncodedText PropName_Publisher = global::System.Text.Json.JsonEncodedText.Encode("Publisher");
+        private static readonly global::System.Text.Json.JsonEncodedText PropName_title = global::System.Text.Json.JsonEncodedText.Encode("title");
+        private static readonly global::System.Text.Json.JsonEncodedText PropName_publisher = global::System.Text.Json.JsonEncodedText.Encode("publisher");
     }
 }
