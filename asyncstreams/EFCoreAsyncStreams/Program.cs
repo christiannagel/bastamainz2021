@@ -51,7 +51,7 @@ class Runner
             .TagWith("AsyncQuery")
             .AsAsyncEnumerable<SomeData>(); 
         
-        await foreach (var item in _context.SomeData)
+        await foreach (var item in e)
         {
             Console.WriteLine(item.Text);
         }
