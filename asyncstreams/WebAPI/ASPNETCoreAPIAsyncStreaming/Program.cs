@@ -1,9 +1,12 @@
+using ASPNETCoreAPIAsyncStreaming.Models;
+
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddSqlServer<SomeDataContext>(
+    builder.Configuration.GetConnectionString("BastaConnection"));
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -22,8 +25,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-app.MapGet("/stream", () => "Foo");
 
 app.MapControllers();
 
