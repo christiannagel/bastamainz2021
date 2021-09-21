@@ -43,18 +43,17 @@ class Runner
         {
             Console.Write(item.Text);
         }
-
     }
 
     public async Task AsyncQuery()
     {
-        var e = _context.SomeData.TagWith("AsyncQuery").AsAsyncEnumerable<SomeData>();
-        await foreach (var item in e)
+        var e = _context.SomeData
+            .TagWith("AsyncQuery")
+            .AsAsyncEnumerable<SomeData>(); 
+        
+        await foreach (var item in _context.SomeData)
         {
-            Console.Write(item.Text);
+            Console.WriteLine(item.Text);
         }
-
     }
-
-
 }

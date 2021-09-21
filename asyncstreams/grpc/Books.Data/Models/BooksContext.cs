@@ -33,7 +33,7 @@ public class BooksContext : DbContext, IBookChapterService
             await this.Chapters.AddRangeAsync(chapters);
             await SaveChangesAsync();
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             throw;
         }
