@@ -7,6 +7,8 @@ Code samples for my presentations for [BASTA! Hybrid in Mainz and online](https:
 
 ## C# 9 and 10 - What's cool?
 
+[Slides C# 9 and 10 - What's cool?](https://www.slideshare.net/christiannagel/c-9-and-10-whats-cool)
+
 Nullable reference types and their enhancements from C# 8 to 9 to 10 and top-level statements with C# 9 with enhancements with C# 10 such as *global using directive*, *file-scoped namespaces* and *implicit usings*.
 
 * Nullable Issues
@@ -24,6 +26,8 @@ Source code generators
 * JSON Serializer   
 
 ## Asynchronous Streaming
+
+[Slides Asynchronous Streaming](https://www.slideshare.net/christiannagel/async-streams)
 
 Asynchronous streams - `IAsyncEnumerable`, `IAsyncEnumerator`, extensions to the `yield` and `foreach` statements and implementations for async streams with different libraries
 
